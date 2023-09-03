@@ -1,0 +1,24 @@
+.container {
+    text-align: center;
+    margin-top: 100px;
+  } 
+  
+  .password-container {
+    margin-top: 20px;
+  } 
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+  } 
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
