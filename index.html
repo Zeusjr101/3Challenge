@@ -9,26 +9,44 @@
   </head>
   <body>
     <div class="topheader">
-      <header>Generate a Password</header>
+      <header>Password Generate</header>
     </div>
     <div class="container">
       <section class="midinfo">
-      <input class="input-text" type="text" />
+        <h2 class="topmid">Generate a Password</h2>    
+        <input type="text" name="" placeholder="Create Password" id="Password">
       <section>
+        <div id="checkbox">
+          <ul class="item">
+            <li><input type="checkbox" name="lowercase" value="lowercase"></li>
+            <label for="lowercase">Lowercase</label><br>
+            <li><input type="checkbox" name="upperrcase" value="upperrcase"></li>
+            <label for="upperrcase">Upperrcase</label><br>
+            <li><input type="checkbox" name="numeric" value="numeric"></li>
+            <label for="numeric">Numeric</label><br>
+            <li><input type="checkbox" name="special characters" value="special-characters"></li>
+            <label for="special-characters">Special-characters</label><br>
+            <li><input type="checkbox" name="Password Length" value="Password-Length"></li>
+            <label for="Password-Length">Password Length</label><br>
+            </li>
+          </ul>
+          <select id="Password-Length">
+            <option value="8">8 </option>
+            <option value="8">18 </option>
+            <option value="8">24</option>
+            <option value="8">52 </option>
+            <option value="8">95 </option>
+            <option value="8">128 </option>          
+          </select>
+          
+        </div>
     </div>
-    <div>
-      <div id="checkbox" class="dropdownlist">
-        <ul class="item">
-          <li><input type="checkbox" name="Test1" id="drop"></li>
-          <li><input type="text">test2</li>
-          <li><input type="text">test3</li>
-          <li><input type="text">test4</li>
-          <li><input type="text">test5</li>
-        </ul>
-      </div>
-    </div>
-    <div class="bottom-btn">
-      <input type="button" value="Generate Password" />
-    </div>
+      <table class="botton-btn">
+        <th><div id="button" class="btn1" onclick="genPassword()"> Generate</div></th>
+        <th><div id="button" class="btn2" onclick="copyPassword()">Copy</div></th>
+
+      </table>
+      <script src="assets/css/javascript.js"></script>
   </body>
+  
 </html>
