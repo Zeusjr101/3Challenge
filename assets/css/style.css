@@ -1,11 +1,14 @@
+.topheader{
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
 .container {
     text-align: center;
     margin-top: 100px;
   } 
-  
-  .password-container {
-    margin-top: 20px;
-  } 
+
   
   input[type="text"] {
     width: 300px;
@@ -20,5 +23,20 @@
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: -26px;
+  }
+  .midinfo{
+    border: 2px solid black;
+    width: 600px;
+    height: 450px;
+    margin-left: 34%;
+  }
+  .bottom-btn{
+    text-align: center;
+    margin-top: -26px;
+  }
+
+  .input-text{
+    margin-top: 22px;
   }
   

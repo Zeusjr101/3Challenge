@@ -3,21 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
-    <head>
-      <title>Password Generator</title>
-    </head>
-    <body>
-      <div class="container">
-        <h1>Password Generator</h1>
-        <div class="password-container">
-          <input type="text" id="password" readonly />
-          <button onclick="generatePassword()">Generate Password</button>
-        </div>
-      </div>
-
-      <script src="script.js"></script>
-    </body>
+    <title>Password Generator</title>
   </head>
+  <body>
+    <div class="topheader">
+      <header>Generate a Password</header>
+    </div>
+    <div class="container">
+      <section class="midinfo">
+      <input class="input-text" type="text" />
+      <section>
+    </div>
+    <div>
+      <div id="checkbox" class="dropdownlist">
+        <ul class="item">
+          <li><input type="checkbox" name="Test1" id="drop"></li>
+          <li><input type="text">test2</li>
+          <li><input type="text">test3</li>
+          <li><input type="text">test4</li>
+          <li><input type="text">test5</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-btn">
+      <input type="button" value="Generate Password" />
+    </div>
+  </body>
 </html>
