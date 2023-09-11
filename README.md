@@ -12,5 +12,4 @@
   Below is the image of my website and link.
 
   https://zeusjr101.github.io/My-Awesome-Password-Generator/
-
-![Alt text](Assets/screenshotpasswordpng.png)
+  ![Alt text](assets/screenshotpasswordpng.png)
