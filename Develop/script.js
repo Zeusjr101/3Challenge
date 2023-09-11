@@ -31,16 +31,16 @@ function generatePassword(){
     var addspecialChar = confirm("Would you like to include special?");
     var addnumeric = confirm("Would you like to include numeric?");
 
-    if (addupperCase == false && addlowerCase == false && addspecialChar == false && addnumeric == false){
+    if (!addupperCase && !addlowerCase && !addspecialChar && !addnumeric){
       return " You must choose some character";
     }
 
-    if (addlowerCase){ passwordChar.push += lowerCase}
-    if (addupperCase) {passwordChar.push += upperCase}
-    if (addspecialChar) {passwordChar.push += specialChar}
-    if (addnumeric) {passwordChar.push += numeric}
+    if (addlowerCase){ passwordChar.push (...lowerCase)}
+    if (addupperCase) {passwordChar.push (...upperCase)}
+    if (addspecialChar) {passwordChar.push (...specialChar)}
+    if (addnumeric) {passwordChar.push (...numeric)}
 
-    var finalPassword = ""
+    var finalPassword = "";
     for (var i = 0; i < numOfChar; i++) {
       var randomChar = passwordChar[Math.floor(Math.random() * passwordChar.length)];
       finalPassword  += randomChar;
